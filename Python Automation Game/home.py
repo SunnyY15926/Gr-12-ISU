@@ -24,8 +24,8 @@ grey = (150, 150, 150)
 black = (0,0,0)
 
 p1 = Player(40, 40)
-character = pygame.image.load("download.png")
-character = pygame.transform.scale(character, (40, 40))
+#character = pygame.image.load("download.png")
+#character = pygame.transform.scale(character, (40, 40))
 
 mouseCoords = [0,0,0,0]
 
@@ -98,8 +98,10 @@ def draw(): #runs once and initializes game variables
             pages[pageNum].tick()
 
         #update using page OOP
+        '''
         if tab == 2:  # map screen
             screen.blit(character, (p1.getX(), p1.getY()))
+        '''
 
         pygame.draw.rect(screen, red, (drawCoords)) #scaffolding tool for drawing rectangles when designing UI
         pygame.display.update()
